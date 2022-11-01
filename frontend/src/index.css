@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* gg font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "./assets/css/variable.css";
+@import "./assets/css/page404.css";
+@import "./assets/css/customScrollbar.css";
+@import "./assets/css/button.css";
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--white);
+}
+
+html {
+  color: var(--white)
+}
+
+a {
+  color: var(--white)
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Dosis', sans-serif;
+      font-weight: 300;
+}
+.font-logo{
+  font-family: 'Pacifico', cursive;
+}
+
+.project-nav__item.active{
+  @apply tw-bg-primary tw-p-2 tw-px-3 tw-rounded
+}
+.project-nav__item.active:hover{
+  @apply tw-text-white
+}
+
+.banner-icon:hover {
+  text-shadow: 0 2px 10px #fff;
+}
+
+
